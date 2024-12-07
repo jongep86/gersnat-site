@@ -1,48 +1,15 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f4f4;
   color: #333;
 }
 
-header {
-  background: #004d40;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-#hero {
-  background: #e0f7fa;
-  height: 50vh;
+header.hero {
+  background: url('images/hero_background.jpg') no-repeat center center/cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,19 +17,53 @@ nav ul li a {
   color: #fff;
 }
 
-#hero h1 {
-  font-size: 3rem;
+header.hero h1 {
+  font-size: 4rem;
+  margin: 0.5rem 0;
 }
 
-#about {
-  padding: 2rem 0;
-  background: #e0f7fa;
+header.hero p {
+  font-size: 1.5rem;
+}
+
+.container img.logo {
+  height: 100px;
+}
+
+.about {
   text-align: center;
+  padding: 2rem;
+  background: #fff;
+}
+
+.about h2 {
+  color: #004d40;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: #004d40;
+}
+
+.gallery .images {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
 }
 
 footer {
   background: #004d40;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
